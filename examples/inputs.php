@@ -19,7 +19,7 @@
             <form action="" method="post">
                 <?php
 
-                    require "../src/array-2-html-from.php";
+                    require "../src/a2hf.php";
 
                     use a2hf\a2hf;
 

@@ -1,0 +1,16 @@
+{
+    "name": "hasokeyk/array-2-html-form",
+    "type": "library",
+    "description": "Automatically converts php array type to html form elements",
+    "keywords": ["html","php","php array","html form"],
+    "homepage": "https://hayatikodla.net",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasan Yüksektepe",
+            "email": "hasanhasokeyk@hotmail.com",
+            "homepage": "https://hayatikodla.net",
+            "role": "Developer"
+        }
+    ],
+}

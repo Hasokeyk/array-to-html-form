@@ -12,5 +12,8 @@
             "homepage": "https://hayatikodla.net",
             "role": "Developer"
         }
-    ]
+    ],
+	"require": {
+        "php": ">=7.0.0"
+    }
 }

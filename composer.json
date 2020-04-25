@@ -5,6 +5,7 @@
     "keywords": ["html","php","php array","html form"],
     "homepage": "https://hayatikodla.net",
     "license": "MIT",
+	"minimum-stability": "stable",
     "authors": [
         {
             "name": "Hasan Yüksektepe",

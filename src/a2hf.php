@@ -44,7 +44,7 @@
 			$name   = $element['name']??$this->convertSlug($element['label'],'_');
             $value  = $this->postSaveControl($element['name'])??($element['value']??'');
 
-			$text = '<div class="form-group">';
+			$text = '<div class="form-group '.($element['class']??'').'">';
             $text .= '<label for="'.($name).'" class="col-form-label '.($element['labelClass']??'').'">'.($element['label']).'</label>';
             $text .= '<input id="'.($name).'" name="'.($name).'" type="text" class="form-control '.($name).' '.($element['inputClass']??'').'" value="'.($value).'" placeholder="'.($element['placeholder']??'').'" required>';
             $text .= '</div>';
@@ -58,7 +58,7 @@
 			$name = $element['name']??$this->convertSlug($element['label'],'_');
             $value  = $this->postSaveControl($element['name'])??($element['value']??'');
 
-			$text = '<div class="form-group">';
+			$text = '<div class="form-group '.($element['class']??'').'">';
             $text .= '<label for="'.($name).'" class="col-form-label '.($element['labelClass']??'').'">'.($element['label']).'</label>';
             $text .= '<input id="'.($name).'" name="'.($name).'" type="password" class="form-control '.($name).' '.($element['inputClass']??'').'" value="'.($value).'" placeholder="'.($element['placeholder']??'').'" required>';
             $text .= '</div>';
@@ -72,7 +72,7 @@
 			$name = $element['name']??$this->convertSlug($element['label'],'_');
             $value  = $this->postSaveControl($element['name'])??($element['value']??'');
 
-			$text = '<div class="form-group">';
+			$text = '<div class="form-group '.($element['class']??'').'">';
             $text .= '<label for="'.($name).'" class="col-form-label '.($element['labelClass'])??''.'">'.($element['label']).'</label>';
             $text .= '<textarea id="'.($name).'" name="'.($name).'" type="text" class="form-control '.($name).' '.($element['inputClass']).'" placeholder="'.($element['placeholder']??'').'" cols="'.($element['cols']??'50').'" rows="'.($element['rows']??'10').'" required>'.($value).'</textarea>';
             $text .= '</div>';
@@ -85,7 +85,7 @@
 
 			$name = $element['name']??$this->convertSlug($element['label'],'_');
 
-			$text = '<div class="custom-control custom-radio">';
+			$text = '<div class="custom-control custom-radio '.($element['class']??'').'">';
             $text .= '<input id="'.($name).'" name="'.($name).'[]" type="radio" value="'.($element['value']).'" class="custom-control-input '.($name).' '.($element['inputClass']).'" required>';
             $text .= '<label for="'.($name).'" class="custom-control-label '.($element['labelClass'])??''.'">'.($element['label']).'</label>';
             $text .= '</div>';
@@ -98,7 +98,7 @@
 
 			$name = $element['name']??$this->convertSlug($element['label'],'_');
 
-			$text = '<div class="custom-control custom-checkbox">';
+			$text = '<div class="custom-control custom-checkbox '.($element['class']??'').'">';
             $text .= '<input id="'.($name).'" name="'.($name).'[]" type="checkbox" value="'.($element['value']).'" class="custom-control-input '.($name).' '.($element['inputClass']).'" required>';
             $text .= '<label for="'.($name).'" class="custom-control-label '.($element['labelClass'])??''.'">'.($element['label']).'</label>';
             $text .= '</div>';
@@ -110,7 +110,7 @@
 		function createSelectFormElement($element,$echo=true){
 
 			$name   = $element['name']??$this->convertSlug($element['label'],'_');
-			$text = '<div class="form-group">';
+			$text = '<div class="form-group '.($element['class']??'').'">';
             $text .= '<label for="'.($name).'" class="col-form-label">'.($element['label']).'</label>';
             $text .= '<select class="form-control '.($element['class']??'').'" name="'.($name).'" id="'.($name).'" required '.(implode(' ', $element['param']??[])).'>';
 
